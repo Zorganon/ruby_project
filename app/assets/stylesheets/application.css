@@ -14,8 +14,10 @@
  *= require_self
  */
 body {
-    background-color: #222;
+    background-color: #AAA;
+    background-image: url("fog2.jpg");
 }
+
 
 .navbar {
     background-color: black;
@@ -28,11 +30,21 @@ body {
     color: #FF0;
 }
 
-h1,
-h2 {
+h1 {
+    padding: 40px 0 0 0;
  color: brown;
- margin-left: auto;
- margin-right: auto;
+ text-align: center;
+ font-weight: 700;
+ font-family: amatic sc, cursive;
+ font-size: 50pt;
+}
+
+h2{
+    color: brown;
+     text-align: center;
+     font-weight: 700;
+     font-family: amatic sc, cursive;
+     font-size: 35pt;
 }
 
 .navbar a {
@@ -41,3 +53,12 @@ h2 {
 .navbar a:hover {
     color: #FF0;
 }
+
+.front_image {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    max-width: 500px;
+    padding: 20px 40px;
+}
+

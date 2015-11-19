@@ -3,6 +3,8 @@
 <head>
   <title>Ondatra Zibethicus</title>
   
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700' rel='stylesheet' type='text/css'>
+  
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   
@@ -14,7 +16,7 @@
 </head>
 <body>
   <!-- =========================== Nav Bar Begins ===========================-->
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -34,19 +36,25 @@
         <ul class="nav navbar-nav">
           <li><a href="/static_pages/contact.html">Shamanism 101</a></li>
           <li><a href="/static_pages/about.html">Rituals</a></li>
-          <li><a href="#">Contact Spirits</a></li>
+          <li><a href="#">
+            <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+            </a></li>
           <li><a href="#">Vision Quest</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav> 
   <!-- ============================== Nav Bar Ends ========================== -->
-  
+
 <h1>Organon Shamanic Rites and Rituals</h1>
-<h2>Ancient Mammoth tusks on sale now!</h2>
+<h2>Elk Horns and Mammoth tusks on sale now!</h2>
 
-<%= image_tag("antler.jpg") %>
+<%= image_tag("antler.jpg", :class => "front_image") %>
 
+<!-- ========= footer ========== -->
+
+
+<!-- ========= end footer ========== -->
 
 <%= yield %>
 
