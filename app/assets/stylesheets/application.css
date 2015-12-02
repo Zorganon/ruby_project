@@ -57,8 +57,16 @@ h2{
 .front_image {
     width: auto;
     height: auto;
-    max-height: 250px;
-    max-width: 500px;
-    padding: 20px 40px;
+    max-height: 600px;
+    max-width: 600px;
 }
 
+.product {
+    text-align: center;
+    font-family: Walter Turncoat, amatic sc;
+    padding: 60px 60px;
+}
+
+.product p {
+    background-color: #DDD;
+}
