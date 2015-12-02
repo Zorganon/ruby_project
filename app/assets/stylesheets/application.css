@@ -70,3 +70,8 @@ h2{
 .product p {
     background-color: #DDD;
 }
+
+.glyphicon :hover {
+    color: orange;
+    -webkit-transition: 600ms;
+}
