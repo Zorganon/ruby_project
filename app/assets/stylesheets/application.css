@@ -75,3 +75,11 @@ h2{
     color: orange;
     -webkit-transition: 600ms;
 }
+
+.footer {
+    text-align: center;
+    color: #DDD;
+    font-family: Walter Turncoat;
+    position: absolute;
+    bottom: 20px;
+}
