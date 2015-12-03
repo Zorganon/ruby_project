@@ -1,3 +1,47 @@
 // Place all the styles related to the products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+    font-family: Walter Turncoat, cursive;
+}
+
+
+
+table {
+    font-family: Walter Turncoat, cursive;
+    color: #C00;
+    font-size: 1.5em;
+    margin-left: 40px;
+}
+
+table rd {
+    margin: 10px;
+}
+
+table td {
+    padding: 10px;
+    font-family: Walter Turncoat, cursive;
+}
+
+table td a {
+    color: #630;
+    font-family: Walter Turncoat, cursive;
+}
+
+table a{
+    font-family: Walter Turncoat, cursive;
+    color: #C00;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+p {
+    font-family: Walter Turncoat;
+}
+
+.new_product_link {
+    margin: 20px;
+    font-size: 1.5em;
+    font-family: Walter Turncoat;
+}
