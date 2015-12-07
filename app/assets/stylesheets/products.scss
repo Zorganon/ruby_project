@@ -45,3 +45,21 @@ p {
     font-size: 1.5em;
     font-family: Walter Turncoat;
 }
+
+.product-image {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.container {
+    background-color: #f2e6d9;
+    border-radius: 20px;
+    font-family: Walter Turncoat;
+    max-width: 350px;
+    border: solid 1px;
+}
+
+.container p {
+    font-family: Walter Turncoat;
+}
+
