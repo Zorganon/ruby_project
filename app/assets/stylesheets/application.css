@@ -16,6 +16,7 @@
 body {
     background-color: #AAA;
     background-image: url("fog2.jpg");
+    position: absolute;
 }
 
 
