@@ -12,69 +12,64 @@
  *
  *= require_tree .
  *= require_self
- */
+*/
+/*
+$dark-color: #262216
+$brown-color: #49412C
+$khaki-color: #97743A
+$beige-color: #B0A18E
+*/
+ 
+ 
+ 
+ 
 body {
-    background-color: #AAA;
-    background-image: url("fog2.jpg");
-    position: absolute;
+    background-color: #262216;
 }
 
 
 .navbar {
-    background-color: black;
-    color: #FF0;
-    border-color: black;
-    -webkit-transition: color 600ms;
+    background-color: #49412c;
+    color: #b0a18e;
+    border-color: #49412c;
+    font-family: 'Goudy Bookletter 1911', Ariel, cursive;
 }
 
 #brand-logo {
-    color: #FF0;
+    color: #262216;
 }
 
 h1 {
-    padding: 40px 0 0 0;
- color: brown;
+ color: #b0a18e;
  text-align: center;
- font-weight: 700;
- font-family: amatic sc, cursive;
- font-size: 50pt;
+ font-family: Raleway, helvetica, cursive;
+ text-shadow: 1px 1px 1px #262216;
 }
 
-h2{
-    color: brown;
+h2 {
+    color: #b0a18e;
      text-align: center;
-     font-weight: 700;
-     font-family: amatic sc, cursive;
-     font-size: 35pt;
+     font-family: Raleway, cursive;
+}
+
+.header {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .navbar a {
     margin: 0px 20px 0px 20px;
 }
-.navbar a:hover {
-    color: #FF0;
-}
-
-.front_image {
-    width: auto;
-    height: auto;
-    max-height: 600px;
-    max-width: 600px;
-}
 
 .product {
     text-align: center;
-    font-family: Walter Turncoat, amatic sc;
+    font-family: 'Goudy Bookletter 1911';
     padding: 60px 60px;
 }
 
 .product p {
     background-color: #DDD;
-}
-
-.glyphicon :hover {
-    color: orange;
-    -webkit-transition: 600ms;
 }
 
 .footer {
@@ -84,3 +79,4 @@ h2{
     position: absolute;
     bottom: 20px;
 }
+

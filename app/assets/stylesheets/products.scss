@@ -3,71 +3,37 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    font-family: Walter Turncoat, cursive;
-}
-
-
-
-table {
-    font-family: Walter Turncoat, cursive;
-    color: #C00;
-    font-size: 1.5em;
-    margin-left: 40px;
-}
-
-table th {
-    margin: 20px;
-}
-
-table td {
-    padding: 10px;
-    font-family: Walter Turncoat, cursive;
-}
-
-table td a {
-    color: #630;
-    font-family: Walter Turncoat, cursive;
-}
-
-table a{
-    font-family: Walter Turncoat, cursive;
-    color: #C00;
-    font-size: 1.5em;
-    margin-left: 20px;
+    font-family: 'Goudy Bookletter 1911', cursive;
 }
 
 p {
-    font-family: Walter Turncoat;
+    font-family: 'Goudy Bookletter 1911';
 }
 
 .new_product_link {
     margin: 20px;
     font-size: 1.5em;
-    font-family: Walter Turncoat;
+    font-family: 'Goudy Bookletter 1911';
 }
 
 .product-image {
-    max-width: 300px;
-    max-height: 300px;
-    
+    max-width: 100%;
 }
 
-.container {
-    font-family: Walter Turncoat;
-    
-}
-
-
-.container {
-    background-color: #f2e6d9;
+.product-box {
+    background-color: #B0A18E;
     border-radius: 20px;
-    font-family: Walter Turncoat;
-    max-width: 350px;
+    font-family: 'Goudy Bookletter 1911';
     border: solid 1px;
+    margin: 30px;
 }
 
-.container p {
-    font-family: Walter Turncoat;
+.product-box p {
+    font-family: 'Goudy Bookletter 1911';
     text-align: center;
+}
+
+.carousel-inner > .item > .img{
+    margin: 0 auto;
 }
 
