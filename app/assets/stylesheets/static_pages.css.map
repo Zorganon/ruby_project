@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,iBAAkB;EACd,OAAO,EAAE,EAAE;EACX,GAAG,EAAE,EAAE;EACP,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,gCAAgC;;AAEjD;uBACwB;EAAE,UAAU,EAAE,IAAI;;AAI1C,oBAAqB;EACjB,MAAM,EAAE,KAAK;;AAGjB,iBAAkB;EACd,QAAQ,EAAE,MAAM;EAChB,OAAO,EAAE,EAAE;EACX,MAAM,EAAE,KAAK;EACb,WAAW,EAAE,gCAAgC",
+"sources": ["static_pages.scss"],
+"names": [],
+"file": "static_pages.css"
+}
