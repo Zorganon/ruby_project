@@ -9,4 +9,12 @@ class StaticPagesController < ApplicationController
   
   def landing_page
   end
+  
+  def contact
+  end
+  
+  def admin
+    @products=Product.new
+  end
 end
+

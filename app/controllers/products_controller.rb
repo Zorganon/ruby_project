@@ -25,9 +25,13 @@ class ProductsController < ApplicationController
   def new
     @product = Product.new
   end
-
-  # GET /products/1/edit
+  
+   # GET /products/1/edit
   def edit
+  end
+  
+  def admin
+    @product = Product.new
   end
 
   # POST /products
