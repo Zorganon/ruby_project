@@ -80,4 +80,12 @@ h2 {
     bottom: 20px;
 }
 
+.search-label,
+.navbar-nav {
+    font-family: 'Goudy Bookletter 1911';
+    color: #B0A18E;
+}
 
+.navbar-nav a{
+    color: #B0A18E !important;
+}

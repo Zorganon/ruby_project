@@ -1,29 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+<div class="container">
+  <div class="row">
+      <%= render @product %>
+  </div>
+  <br>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
-
-<p>
-  <strong>Image url:</strong>
-  <%= @product.image_url %>
-</p>
-
-<p>
-  <strong>Color:</strong>
-  <%= @product.colour %>
-</p>
-
-<p> 
-  <strong>Price:</strong>
-  <%= @product.price %>
-</p>
+  <div class="button">
+    <%= link_to 'Back', url_for(:back), :class => 'btn'%>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product), :type => 'button', :class => 'btn btn-default' %> |
-<%= link_to 'Back', products_path, :type => 'button', :class => 'btn btn-default' %>
+<%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
