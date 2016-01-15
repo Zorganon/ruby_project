@@ -27,8 +27,8 @@ body {
     background-color: #262216;
 }
 
-
-.navbar {
+.navbar,
+.navtex {
     background-color: #49412c;
     color: #b0a18e;
     border-color: #49412c;

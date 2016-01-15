@@ -20,6 +20,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<p class ="notice"><%= notice %></p>
+<p class ="alert"><%= alert %></p>
   <!-- =========================== Nav Bar Begins =========================== -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -37,12 +39,21 @@
       </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navtext">
           <li><%= link_to 'Home', static_pages_index_path %></li>
           <li><%= link_to 'Philosophy Lessons', static_pages_philosophy_path %></li>
           <li><%= link_to 'About Us', static_pages_about_path %></li>
           <li><%= link_to 'Contact Us', static_pages_contact_path %></li>
           <li><%= link_to 'Product Listing', products_path %></li>
+        </ul>
+        <ul class="nav pull-right navtext">
+          <li>
+            <% if user_signed_in? %>
+              <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+            <% else %>
+              <%= link_to('Login', new_user_session_path,) %>
+            <% end %>
+          </li>
         </ul>
         <form class="navbar-form navbar-left" role="search">
           <div class = "form-group">
@@ -63,7 +74,6 @@
   <h1>"Sophisticated Airhead"</h1>
   <h2>"The only true wisdom, is knowing you know nothing..."</h2>
 </div>
-
 <!-- ========= footer ========== -->
 
 <footer>
