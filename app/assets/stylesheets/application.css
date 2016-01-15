@@ -89,3 +89,12 @@ h2 {
 .navbar-nav a{
     color: #B0A18E !important;
 }
+
+.navtext {
+    font-family: 'Goudy Bookletter 1911', cursive;
+    color: #B0A18E
+}
+
+.pull-right {
+    margin-top: 5px;
+}
