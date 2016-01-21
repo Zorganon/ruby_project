@@ -20,8 +20,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class ="notice"><%= notice %></p>
-<p class ="alert"><%= alert %></p>
   <!-- =========================== Nav Bar Begins =========================== -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -69,6 +67,12 @@
     </div><!-- /.container-fluid -->
   </nav> 
   <!-- ============================== Nav Bar Ends ========================== -->
+<% if notice %>
+  <p id="notice" class="alert alert-info" role="alert"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p id="alert" class="alert alert-danger" role="alert"><%= alert %></p>
+<% end %>
 
 <div class="header">
   <h1>"Sophisticated Airhead"</h1>
