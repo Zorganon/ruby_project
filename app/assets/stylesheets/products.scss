@@ -9,59 +9,8 @@ $khaki-color: #97743A
 $beige-color: #B0A18E
 */
 
-body {
-    font-family: 'Goudy Bookletter 1911', cursive;
-}
 
-p {
-    font-family: 'Goudy Bookletter 1911';
-}
 
-.new_product_link {
-    margin: 20px;
-    font-size: 1.5em;
-    font-family: 'Goudy Bookletter 1911';
-}
 
-.product-image {
-    max-width: 100%;
-}
 
-.product-box {
-    background-color: #B0A18E;
-    border-radius: 20px;
-    font-family: 'Goudy Bookletter 1911';
-    border: solid 1px;
-    margin: 30px;
-}
 
-.product-box p {
-    font-family: 'Goudy Bookletter 1911';
-    text-align: center;
-}
-
-.carousel-inner > .item > .img{
-    margin: 0 auto;
-}
-
-.entry-form {
-    color: #B0A18E;
-}
-
-.field-label {
-    color: #49412C;
-    font-family: 'Goudy Bookletter 1911';
-    margin-top: 30px;
-    margin-left: 50px;
-}
-
-.submit-label {
-    color: #262216;
-    font-family: 'Goudy Bookletter 1911';
-    margin-left: 50px;
-}
-
-.form-field {
-    margin-left: 50px;
-    max-width: auto;
-}

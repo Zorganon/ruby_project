@@ -4,6 +4,7 @@ $brown-color: #49412C
 $khaki-color: #97743A
 $beige-color: #B0A18E
 */
+
 body {
   font-family: 'Goudy Bookletter 1911', cursive; }
 
@@ -48,6 +49,10 @@ p {
 
 .form-field {
   margin-left: 50px;
-  max-width: auto; }
+  width: auto;}
+  
+.show-page-product-detail p{
+  font-family: 'Goudy Bookletter 1911', cursive;
+  color: #B0A18E;}
 
 /*# sourceMappingURL=products.css.map */
