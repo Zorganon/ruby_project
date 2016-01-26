@@ -7,9 +7,12 @@
     <div class="show-page-product-detail">
       <p>Name: <%= @product.name %></p>
       <p>Description: <%= @product.description %></p>
+      <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div></p>
       <p>Price: <span class="glyphicon glyphicon-euro" aria-hidden="true"></span> <%= @product.price %></p>
       <%= link_to 'Edit', edit_product_path(@product), :type => 'button', :class => 'btn btn-default' %> |
       <%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
+      <%= render 'new_comment' %>
+      <%= render 'comments' %>
     </div>
   </div>
 </div>

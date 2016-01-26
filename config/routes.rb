@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :users
   get 'products/admin'
   
-  resources :products
+  resources :products do
+    resources :comments
+  end
   
   get 'static_pages/about'
 
