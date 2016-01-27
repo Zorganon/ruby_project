@@ -76,8 +76,8 @@ h2 {
     text-align: center;
     color: #DDD;
     font-family: Walter Turncoat;
-    position: absolute;
-    bottom: 20px;
+    position: static;
+    bottom: 5px;
 }
 
 .search-label,

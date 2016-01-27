@@ -19,8 +19,9 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
-    @comments = @product.comments.order("created_at DESC")
+    @comments = @product.comments.paginate(:page => params[:page], :per_page => 5)
   end
+    #<% @comments = Comment.paginate(:page => params[:page], :per_page => 5) %>
 
   # GET /products/new
   def new
@@ -75,9 +76,6 @@ class ProductsController < ApplicationController
     end
   end
 
-  def average_rating
-    comments.average(:rating).to_f
-  end
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_product

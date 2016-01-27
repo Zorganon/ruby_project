@@ -12,9 +12,11 @@
       <%= link_to 'Edit', edit_product_path(@product), :type => 'button', :class => 'btn btn-default' %> |
       <%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
       <%= render 'new_comment' %>
-      <%= render 'comments' %>
     </div>
   </div>
+  <div class="row show-page-product-detail">
+    <%= render 'comments' %>
+  </div>    
 </div>
 <div class="button">
  <%= link_to 'Back', url_for(:back), :class => 'btn'%>
