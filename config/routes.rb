@@ -5,12 +5,10 @@ Rails.application.routes.draw do
   resources :users
   get 'products/admin'
   
-  resources :products do
+  resources :products do  
     resources :comments
   end
   
-  get 'static_pages/about'
-
   get 'static_pages/contact'
 
   get 'static_pages/about'
@@ -18,8 +16,6 @@ Rails.application.routes.draw do
   get 'static_pages/index'
   
   get 'static_pages/philosophy'
-  
-  get 'static_pages/contact'
   
   resources :orders, only: [:index, :show, :create, :destroy]
   
