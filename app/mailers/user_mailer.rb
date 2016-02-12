@@ -7,4 +7,10 @@ class UserMailer < ApplicationMailer
             :to => 'danthehudson@gmail.com',
             :subject => "A new message from #{name}")
     end
+    
+    def order_confirmation(email, product_name)
+        mail( :to => email,
+        :subject => "Your Purchase with Sophisticated Airhead",
+        )
+    end
 end
