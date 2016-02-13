@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <div class="container">
   <div class="row">
     <%= render @product %>
@@ -15,7 +14,9 @@
       <% end %>
       <%= link_to 'Edit', edit_product_path(@product), :type => 'button', :class => 'btn btn-default' %>
       <%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
-      
+<!-- LOGGER DEBUG -->
+      <% logger.debug "product is #{@product.name}" %>
+<!-- BYEBUG -->  BYEBUG
       <%= render 'new_comment' %>
     </div>
   </div>
