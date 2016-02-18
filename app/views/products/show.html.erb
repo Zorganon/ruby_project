@@ -1,7 +1,16 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
   <div class="row">
-    <%= render @product %>
+    <div class="col-xs-6 col-md-3 product-box">
+      <p><h4><%= @product.name %></h4></p>
+        <div class="thumbnail">
+            <%= image_tag(@product.image_url, :class => "thumbnail product-image img img-rounded img-zoom", :data_zoom_image => @product.image_url) %> 
+        </div>
+      <p><h4>Description: </h4><%= @product.description %></p>
+      <p><h4>Price: </h4><span class="glyphicon glyphicon-euro" aria-hidden="true"></span><%= @product.price %></p>
+      <%= link_to 'Edit', edit_product_path(@product), :class => 'btn btn-default', :type => 'button' %> 
+      <%= link_to 'Destroy', @product, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-default', :type => 'button' %></p>
+    </div>
     <br>
     <div class="show-page-product-detail">
       <p>Name: <%= @product.name %></p>
@@ -16,7 +25,7 @@
       <%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
 <!-- LOGGER DEBUG -->
       <% logger.debug "product is #{@product.name}" %>
-<!-- BYEBUG -->  BYEBUG
+<!-- BYEBUG --> 
       <%= render 'new_comment' %>
     </div>
   </div>
