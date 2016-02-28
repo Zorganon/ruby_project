@@ -25,10 +25,10 @@ app.controller('OrdersCntrl', ['$scope', 'models', function($scope, models){
       recent_order = models.orders.get({id: order.id});
       $scope.orders.push(recent_order);
       $scope.newOrder = '';
-    });
+  });
     
-    $scope.orders.push($scope.newOrder);
-  };
+  
+};
   
   $scope.deleteOrder = function(order){
     $scope.orders.splice($scope.orders.indexOf(order), 1);
