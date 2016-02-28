@@ -15,6 +15,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'will_paginate'
 
+gem 'angularjs-rails'
+
 gem 'rails-html-sanitizer', '~>1.0.3'
 
 # Use jquery as the JavaScript library
