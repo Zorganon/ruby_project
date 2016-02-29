@@ -17,6 +17,8 @@ gem 'will_paginate'
 
 gem 'angularjs-rails'
 
+gem 'dalli'
+
 gem 'rails-html-sanitizer', '~>1.0.3'
 
 # Use jquery as the JavaScript library

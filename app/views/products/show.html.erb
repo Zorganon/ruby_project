@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 <div class="container">
   <div class="row">
+    <% cache @product do %>
     <div class="col-xs-6 col-md-3 product-box">
       <p><h4><%= @product.name %></h4></p>
         <div class="thumbnail">
@@ -25,6 +26,7 @@
       <%= link_to 'Products Listing', products_path, :type => 'button', :class => 'btn btn-default' %>
       <%= render 'new_comment' %>
     </div>
+    <% end %>
   </div>
   <div class="row show-page-product-detail comments-stack">
     <%= render 'comments' %>

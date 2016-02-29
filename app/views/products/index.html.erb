@@ -1,10 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Products</h1>
-
 <div class="container">
   <div class="row">
+    <% cache(cache_key_for_products) do %>
       <%= render @products %>
+    <% end %>
   </div>
   <br>
   <div class="new_product_link">
