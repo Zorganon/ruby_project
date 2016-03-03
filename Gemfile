@@ -19,7 +19,6 @@ gem 'angularjs-rails'
 
 gem 'dalli'
 
-gem 'redis-rails'
 
 gem 'rails-html-sanitizer', '~>1.0.3'
 
@@ -57,6 +56,8 @@ group :development, :test do
   
   gem 'rspec-rails', '~> 3.0'
   
+  gem 'redis-rails'
+  
   gem 'factory_girl_rails', '~> 4.0'
   
   gem 'guard'
@@ -79,4 +80,5 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'redis'
 end

@@ -284,6 +284,7 @@ DEPENDENCIES
   rails (= 4.2.4)
   rails-html-sanitizer (~> 1.0.3)
   rails_12factor
+  redis
   redis-rails
   rspec-rails (~> 3.0)
   sass-rails (~> 5.0)
