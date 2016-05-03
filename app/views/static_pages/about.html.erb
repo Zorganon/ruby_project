@@ -5,16 +5,16 @@
 
 	<body>
 		<div class="container">
-			<div class = "main-text">
-				<h2>More about me</h2>
-				<p>Dan grew up in Minneapolis Minnesota.  He attended College at Tulane University in New Orleans, graduating with a BS in Ecology and Evolutionary Biology.  He currently resides in Minneapolis and dreams of taking life on the road, after building his own dwelling into an old U-Haul truck.
-	
-				He's juggled ever since he received a $10 juggling starter kit as one of those "I have no idea what to get my nephew" gifts one year at christmas.  Spot on Uncle Peter...</p>
-			</div>
-			
-	
-			<div class="new_product_link">
-				<%= link_to 'New Product', new_product_path, :class => 'btn' %>
+			<div class ="main-text" id="aboutMe-text">
+				<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">More about us</h3>
+				  </div>
+				  <div class="panel-body">
+						<p>Dan grew up in Minneapolis Minnesota.  He attended College at Tulane University in New Orleans, graduating with a BS in Ecology and Evolutionary Biology.  He currently resides in Minneapolis and dreams of taking life on the road, after building his own dwelling into an old U-Haul truck.</p>
+						<p>He's juggled ever since he received a $10 juggling starter kit as one of those "I have no idea what to get my nephew" gifts one year at christmas.  Spot on Uncle Peter...</p>
+				  </div>
+				</div>
 			</div>
 			<div class="button">
           <%= link_to 'Back', url_for(:back), :class => 'btn'%>

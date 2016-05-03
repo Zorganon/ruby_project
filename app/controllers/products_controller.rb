@@ -23,7 +23,7 @@ class ProductsController < ApplicationController
   def show
     @comments = @product.comments.paginate(:page => params[:page], :per_page => 5)
   end
-    #<% @comments = Comment.paginate(:page => params[:page], :per_page => 5) %>
+    
 
   # GET /products/new
   def new
