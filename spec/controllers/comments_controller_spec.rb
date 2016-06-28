@@ -1,17 +1,19 @@
 require 'rails_helper'
 
 describe CommentsController, :type => :controller do
-  
-  before do
-    @user = FactoryGirl.build(:user)
-    sign_in @user
-  end
-  
-    context "make a comment" do
-      it "should not save comments without a body" do
-        @comment=FactoryGirl.build(:comment, body: "")
-        expect(@comment).to_not be_valid
-      end
+  context "POST #create" do
+    before do
+      user = User.new(:email => dan.hudson@gmail.com, :password => 'W1ndCh$ps')
+      post :create, :product_id => 4,
     end
     
+    it "responds successfully with an HTTP 200 status code" do
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+    end
+    
+    it "renders the index template" do
+      expect(response).to render_template("index")
+    end
+  end
 end

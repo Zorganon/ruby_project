@@ -17,6 +17,8 @@ class PaymentsController < ApplicationController
           :user_id => @user.id,
           :total => @product.price)
       end
+    rescue NoMethodError
+      flash[:error] = "You need to login first silly!"
     rescue Stripe::CardError => e
       #card has been declined
       body = e.json_body
