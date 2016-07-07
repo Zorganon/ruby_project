@@ -4,7 +4,7 @@ describe UsersController, :type => :controller do
   before do
     @user = FactoryGirl.create(:user)
     @user2 = FactoryGirl.create(:user)
-  end
+  end 
   
     describe "GET #show" do
       context "user logged in" do
@@ -15,7 +15,7 @@ describe UsersController, :type => :controller do
           get :show, id: @user.id
           expect(response).to have_http_status(200)
           expect(assigns(:user)).to eq @user
-        end
+        end 
         
       end
     
