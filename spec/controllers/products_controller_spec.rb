@@ -2,9 +2,8 @@ require 'rails_helper'
 
 describe ProductsController, :type => :controller do
   before do
-    @product = FactoryGirl.build(:product)
+    @product = FactoryGirl.create(:product)
   end
-  
   
   context "show a product" do
     it "shows the product page" do
@@ -13,4 +12,22 @@ describe ProductsController, :type => :controller do
     end
   end
   
-end 
+  describe "patch #update" do
+    context "update a product" do
+      it "changes the price of a product" do
+        patch :update, id: @product.id, product: {price: 22}
+        expect(response).to redirect_to(product_path)
+      end
+    end
+  end
+  
+  describe "delete #destroy" do
+    before do
+      @product = FactoryGirl.create(:product)
+    end
+    it "destroys the product" do
+      delete :destroy, id: @product.id
+      expect(response).to redirect_to(products_path)
+    end
+  end
+end
