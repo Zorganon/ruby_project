@@ -3,7 +3,7 @@ FactoryGirl.define do
   factory :comment do
     user_id 4
     body
-    rating "3"
+    rating 3
     product_id 4
   end
 end

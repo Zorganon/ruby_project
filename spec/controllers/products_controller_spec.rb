@@ -18,6 +18,15 @@ describe ProductsController, :type => :controller do
         patch :update, id: @product.id, product: {price: 22}
         expect(response).to redirect_to(product_path)
       end
+      it "changes the name of a product" do
+        patch :update, id: @product.id, product: {name: "blemflark"}
+        expect(response).to redirect_to(product_path)
+      end
+      
+      it "changes the description of a product" do
+        patch :update, id: @product.id, product: {description: "why bother?"}
+        expect(response).to redirect_to(product_path)
+      end
     end
   end
   
@@ -28,6 +37,6 @@ describe ProductsController, :type => :controller do
     it "destroys the product" do
       delete :destroy, id: @product.id
       expect(response).to redirect_to(products_path)
-    end
+    end 
   end
 end
