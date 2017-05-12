@@ -10,7 +10,6 @@ class UserMailer < ApplicationMailer
     
     def order_confirmation(email, product_name)
         mail( :to => email,
-        :subject => "Your Purchase with Sophisticated Airhead",
-        )
+        :subject => "Your Purchase with Sophisticated Airhead")
     end
 end

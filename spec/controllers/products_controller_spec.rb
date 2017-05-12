@@ -39,4 +39,12 @@ describe ProductsController, :type => :controller do
       expect(response).to redirect_to(products_path)
     end 
   end
+  
+  describe "create a new product" do
+    it "creates a new product" do
+      @product = Product.new(name: 'wonka', price: 12, description: "generic text")
+      @product.name.should == 'wonka'
+    end
+  end
+    
 end
