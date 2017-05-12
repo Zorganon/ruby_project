@@ -8,7 +8,7 @@ function ratey (){
   });
 }
 
-$(document).on('ready page:load', function(){
+$(document).on('turbolinks:load', function() {
   ratey();
   //this bit is for the zoom feature
   $('.img-zoom').elevateZoom();
